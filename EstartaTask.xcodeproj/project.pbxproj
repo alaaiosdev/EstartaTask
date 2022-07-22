@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		425B3C99288AEC4B002DC984 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 425B3C98288AEC4B002DC984 /* ProgressHUD */; };
 		42BA3276288937A6009EA0AC /* EstartaTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA3275288937A6009EA0AC /* EstartaTaskApp.swift */; };
 		42BA3278288937A6009EA0AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BA3277288937A6009EA0AC /* ContentView.swift */; };
 		42BA327A288937A8009EA0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42BA3279288937A8009EA0AC /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425B3C99288AEC4B002DC984 /* ProgressHUD in Frameworks */,
 				42BA328528893D99009EA0AC /* Resolver in Frameworks */,
 				42BA328828893E1D009EA0AC /* Alamofire in Frameworks */,
 			);
@@ -90,6 +92,7 @@
 			packageProductDependencies = (
 				42BA328428893D99009EA0AC /* Resolver */,
 				42BA328728893E1D009EA0AC /* Alamofire */,
+				425B3C98288AEC4B002DC984 /* ProgressHUD */,
 			);
 			productName = EstartaTask;
 			productReference = 42BA3272288937A6009EA0AC /* EstartaTask.app */;
@@ -122,6 +125,7 @@
 			packageReferences = (
 				42BA328328893D99009EA0AC /* XCRemoteSwiftPackageReference "Resolver" */,
 				42BA328628893E1D009EA0AC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				425B3C97288AEC4B002DC984 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 42BA3273288937A6009EA0AC /* Products */;
 			projectDirPath = "";
@@ -353,6 +357,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		425B3C97288AEC4B002DC984 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = exactVersion;
+				version = 13.6.1;
+			};
+		};
 		42BA328328893D99009EA0AC /* XCRemoteSwiftPackageReference "Resolver" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Resolver.git";
@@ -372,6 +384,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		425B3C98288AEC4B002DC984 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 425B3C97288AEC4B002DC984 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
 		42BA328428893D99009EA0AC /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 42BA328328893D99009EA0AC /* XCRemoteSwiftPackageReference "Resolver" */;
